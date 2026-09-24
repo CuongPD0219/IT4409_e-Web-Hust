@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>Media - Blakletterpress Website Template</title>
+	<!-- Đường dẫn tệp CSS chuẩn của template -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+	<!-- CSS Tinh chỉnh riêng cho các phần tử Media & HTML5 Semantic -->
+	<style>
+		/* Định dạng khối nội dung bài viết chính */
+		.media-article {
+			color: #333;
+			font-size: 13px;
+			line-height: 1.6;
+		}
+
+		.media-article header h2 {
+			font-size: 22px;
+			color: #333;
+			margin-bottom: 6px;
+			font-weight: normal;
+		}
+
+		.media-article .meta-info {
+			font-size: 11px;
+			color: #666;
+			margin-bottom: 18px;
+		}
+
+		.media-article .meta-info a {
+			color: #2b7042;
+			text-decoration: underline;
+		}
+
+		/* Định dạng các phần Semantic section */
+		.media-section {
+			margin-bottom: 25px;
+		}
+
+		.media-section h3 {
+			font-size: 16px;
+			color: #222;
+			margin-bottom: 12px;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		/* Định dạng figure & figcaption */
+		figure {
+			margin: 0 0 15px 0;
+			text-align: center;
+		}
+
+		figure img, 
+		figure video {
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+			border: 1px solid #dcdcdc;
+		}
+
+		figcaption {
+			font-size: 12px;
+			color: #555;
+			margin-top: 6px;
+			text-align: left;
+			font-style: italic;
+		}
+
+		/* Trình phát Audio chuẩn HTML5 */
+		audio {
+			width: 100%;
+			max-width: 380px;
+			margin: 10px 0;
+			display: block;
+		}
+
+		/* Khung nhúng bản đồ / Iframe */
+		.map-container {
+			width: 100%;
+			border: 1px solid #ccc;
+			margin-top: 10px;
+			overflow: hidden;
+		}
+
+		.map-container iframe {
+			width: 100%;
+			height: 230px;
+			border: 0;
+		}
+
+		/* Footer nội bộ bài viết (Từ khóa/Tags) */
+		.article-footer {
+			margin-top: 20px;
+			padding-top: 10px;
+			border-top: 1px dashed #ccc;
+			font-size: 12px;
+			color: #555;
+		}
+
+		.article-footer a {
+			color: #2b7042;
+			text-decoration: none;
+		}
+
+		.article-footer a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<!-- HEADER (Đầu trang - Giữ nguyên khung mẫu) -->
+		<div id="header">
+			<div id="motto">
+				<a href="index.html" class="sitename"><img src="images/blakletterpress.png" height="24" width="142" alt="SiteName"></a>
+				<p>
+					<img src="images/header-text.png" height="14" width="218" alt="Text">
+				</p>
+			</div>
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+			</div>
+			<div id="searchbar">
+				<form action="#" method="post">
+					<input type="text" value="Enter search query" class="txtfield" onBlur="javascript:if(this.value==''){this.value=this.defaultValue;}" onFocus="javascript:if(this.value==this.defaultValue){this.value='';}">
+					<input type="submit" value="Search" class="btn">
+				</form>
+			</div>
+		</div>
+
+		<!-- CONTENTS (Khu vực nội dung chính & Thanh bên) -->
+		<div id="contents">
+			<div id="main">
+				<div class="body">
+					
+					<!-- Thẻ Semantic ARTICLE: Bao bọc toàn bộ nội dung bài viết sự kiện truyền thông -->
+					<article class="media-article">
+						
+						<!-- Thẻ Semantic HEADER: Chứa tiêu đề bài viết và thông tin xuất bản -->
+						<header>
+							<h2>Ngày hội Công nghệ Xanh 2026</h2>
+							<p class="meta-info">
+								22/04/2026 - Tác giả: <a href="#">Ban tổ chức Blakletterpress</a>
+							</p>
+						</header>
+
+						<!-- Hình ảnh banner đầu bài viết dùng thẻ FIGURE & FIGCAPTION -->
+						<figure>
+							<img src="images/meeting.jpg" alt="Hội trường chính trong ngày khai mạc sự kiện năm 2025">
+							<figcaption>Hội trường chính trong ngày khai mạc sự kiện năm 2025.</figcaption>
+						</figure>
+
+						<!-- Thẻ Semantic SECTION: Giới thiệu sự kiện -->
+						<section class="media-section">
+							<h3>Giới thiệu sự kiện</h3>
+							<p>
+								Ngày hội Công nghệ Xanh 2026 quy tụ các chuyên gia và doanh nghiệp theo đuổi giải pháp công nghệ bền vững. Sự kiện diễn ra chuỗi tọa đàm, triển lãm sản phẩm và các buổi kết nối 1-on-1 dành cho sinh viên.
+							</p>
+						</section>
+
+						<!-- Thẻ Semantic SECTION: Trình chiếu Video giới thiệu -->
+						<section class="media-section">
+							<h3>Video giới thiệu</h3>
+							<figure>
+								<!-- Thẻ VIDEO HTML5 với thuộc tính controls và poster -->
+								<video controls poster="images/team-large.jpg" width="100%">
+									<source src="media/intro.mp4" type="video/mp4">
+									<source src="media/intro.webm" type="video/webm">
+									Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+								</video>
+							</figure>
+						</section>
+
+						<!-- Thẻ Semantic SECTION: Trình phát Podcast/Audio -->
+						<section class="media-section">
+							<h3>Podcast: Trò chuyện cùng diễn giả</h3>
+							<p>Lắng nghe buổi phỏng vấn khách mời chính của chương trình.</p>
+							
+							<!-- Thẻ AUDIO HTML5 có trình điều khiển controls -->
+							<audio controls>
+								<source src="media/podcast.mp3" type="audio/mpeg">
+								<source src="media/podcast.ogg" type="audio/ogg">
+								Trình duyệt của bạn không hỗ trợ thẻ audio HTML5.
+							</audio>
+						</section>
+
+						<!-- Thẻ Semantic SECTION: Bản đồ địa điểm -->
+						<section class="media-section">
+							<h3>Địa điểm tổ chức</h3>
+							<p>Sự kiện diễn ra tại Hà Nội. Xem bản đồ chỉ đường bên dưới:</p>
+							
+							<div class="map-container">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.97785451943!2d105.801944!3d21.028511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0x32085162125f190e!2sH%C3%A0%20N%E1%BB%99i!5e0!3m2!1svi!2svn!4v1700000000000!5m2!1svi!2svn" allowfullscreen="" loading="lazy"></iframe>
+							</div>
+						</section>
+
+						<!-- Thẻ Semantic SECTION: Thư viện hình ảnh các mùa trước -->
+						<section class="media-section">
+							<h3>Hình ảnh các mùa trước</h3>
+							<figure>
+								<img src="images/ecofriends.jpg" alt="Khu trưng bày sản phẩm xanh mùa 2025">
+								<figcaption>Khu trưng bày sản phẩm xanh mùa 2025.</figcaption>
+							</figure>
+						</section>
+
+						<!-- Thẻ Semantic FOOTER (nội bộ bài viết): Chứa các thẻ từ khóa / Tags -->
+						<footer class="article-footer">
+							Cho: <a href="#">công nghệ xanh</a>, <a href="#">phát triển bền vững</a>
+						</footer>
+
+					</article>
+
+				</div>
+			</div>
+
+			<!-- SIDEBAR (Thanh bên navigation & bài viết mẫu) -->
+			<div id="sidebar">
+				<div id="navigation">
+					<div>
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="news.html">News</a>
+							</li>
+							<li>
+								<a href="blog.html">Blog</a>
+							</li>
+							<!-- Mục trang Media hiện tại -->
+							<li class="selected">
+								<a href="media.html">Media</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="section">
+					<div id="connect">
+						<h2>Connect with us:</h2>
+						<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> 
+						<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> 
+						<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+					</div>
+				</div>
+				<div class="section">
+					<div id="posts">
+						<h2>Placeholder</h2>
+						<ul>
+							<li>
+								<h5>Title Sample One</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius
+								</p>
+								<a href="news.html" class="more">Read more</a>
+							</li>
+							<li>
+								<h5>Title Sample One</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius
+								</p>
+								<a href="news.html" class="more">Read more</a>
+							</li>
+						</ul>
+						<a href="news.html" class="btn2">View More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER (Chân trang - Giữ nguyên khung mẫu) -->
+		<div id="footer">
+			<div>
+				<ul id="featured">
+					<li>
+						<a href="index.html" class="home"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+					<li>
+						<a href="index.html" class="bell"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+					<li>
+						<a href="index.html" class="globe"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+					<li>
+						<a href="index.html" class="pencil"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+				</ul>
+				<p id="footnote">
+					© Copyright © 2011.Company name all rights reserved
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
