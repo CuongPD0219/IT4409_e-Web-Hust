@@ -99,6 +99,49 @@
             color: #555;
         }
 
+        /* --- Tùy chỉnh danh sách Bài tập (Assignments) --- */
+        .assignments {
+            margin-top: 35px;
+            text-align: left;
+        }
+
+        .assignments h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .assignment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .assignment-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 20px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        .assignment-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .assignment-btn span {
+            font-size: 13px;
+            font-weight: normal;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
         footer {
             margin-top: 30px;
             color: #777;
@@ -186,6 +229,34 @@
                     trong lĩnh vực công nghệ thông tin.
                 </p>
 
+            </div>
+
+
+            <!-- Danh sách Bài tập / Trang dự án đã thêm mới -->
+            <div class="assignments">
+                <h2>Danh sách Bài tập (Assignment 02)</h2>
+                
+                <div class="assignment-list">
+                    <a href="assignment_02/index.html" class="assignment-btn">
+                        1. Trang chủ Template (Index)
+                        <span>assignment_02/index.html</span>
+                    </a>
+                    
+                    <a href="assignment_02/news.html" class="assignment-btn">
+                        2. Trang Tin tức (News)
+                        <span>assignment_02/news.html</span>
+                    </a>
+
+                    <a href="assignment_02/register.html" class="assignment-btn">
+                        3. Trang Đăng ký (Register)
+                        <span>assignment_02/register.html</span>
+                    </a>
+
+                    <a href="assignment_02/media.html" class="assignment-btn">
+                        4. Trang Đa phương tiện (Media)
+                        <span>assignment_02/media.html</span>
+                    </a>
+                </div>
             </div>
 
 
